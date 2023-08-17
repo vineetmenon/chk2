@@ -47,7 +47,7 @@ def custom_eval_func(func_name, args):
     elif func_name == "COUNT":
         return f"ret count"
     else:
-        return f"ret {func_name})"
+        return f"'ret {func_name}'"
 
 modified_sql = replace_function_calls(sql_statement, custom_eval_func)
 
